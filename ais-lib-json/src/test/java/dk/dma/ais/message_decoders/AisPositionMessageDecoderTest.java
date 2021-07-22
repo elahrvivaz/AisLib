@@ -46,7 +46,7 @@ public class AisPositionMessageDecoderTest {
 
         JSONObject jsonObject = new JSONObject(json);
 
-//        assert (Integer)jsonObject.get("msgId") == 1;
+        assert (Integer)jsonObject.get("msgId") == 1;
 
         JSONAssert.assertEquals(
                 DecoderTestHelper.getJson(objectWriter,

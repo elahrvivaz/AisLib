@@ -19,6 +19,8 @@ public abstract class AisMessageDecoder {
 
     public AisMessageDecoder(AisMessage aisMessage) {
         this.aisMessage = aisMessage;
+        this.msgId = aisMessage.getMsgId();
+        this.userId = aisMessage.getUserId();
     }
 
     //region Getters
